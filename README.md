@@ -15,7 +15,7 @@ Here are instructions on how to setup the API
 1. Clone the repository.
 2. Install Node.js and yarn if you haven't already.
 3. Open a terminal and navigate to the directory containing the codes.
-4. Install the required dependencies by running `npm install`.
+4. Install the required dependencies by running `yarn`.
 
 ## Usage
 
