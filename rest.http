@@ -1,0 +1,95 @@
+POST http://localhost:9000/domain HTTP/1.1
+content-type: application/json
+
+{
+    "domain": "google.com"
+}
+
+# {
+#   "status": "success",
+#   "data": {
+#     "id": 1,
+#     "domain": "google.com",
+#     "long": "-122.08421",
+#     "lat": "37.42240",
+#     "geonameId": "6301403",
+#     "isActive": true
+#   }
+# }
+
+
+############################################
+### Get domain by id
+GET http://localhost:9000/domain/1 HTTP/1.1
+
+# {
+#   "status": "success",
+#   "data": {
+#     "id": 1,
+#     "domain": "google.com",
+#     "long": "-122.08421",
+#     "lat": "37.42240",
+#     "geonameId": "6301403",
+#     "isActive": true
+#   }
+# }
+
+############################################
+### Get domain by name
+GET http://localhost:9000/domain/google.com HTTP/1.1
+
+# {
+#   "status": "success",
+#   "data": {
+#     "id": 1,
+#     "domain": "google.com",
+#     "long": "-122.08421",
+#     "lat": "37.42240",
+#     "geonameId": "6301403",
+#     "isActive": true
+#   }
+# }
+
+
+############################################
+### Get all domains
+GET http://localhost:9000/domains HTTP/1.1
+
+# {
+#   "status": "success",
+#   "data": [
+#     {
+#       "id": 1,
+#       "domain": "google.com",
+#       "long": "-122.08421",
+#       "lat": "37.42240",
+#       "geonameId": "6301403",
+#       "isActive": true
+#     }
+#   ]
+# }
+
+############################################
+### Deactivate domain by id
+DELETE http://localhost:9000/domain/1 HTTP/1.1
+
+# {
+#   "status": "success",
+#   "data": true
+# }
+
+############################################
+### Update domain by id
+PUT http://localhost:9000/domain/1 HTTP/1.1
+
+# {
+#   "status": "success",
+#   "data": {
+#     "id": 2,
+#     "domain": "google.com",
+#     "long": "-122.08421",
+#     "lat": "37.42240",
+#     "geonameId": "6301403",
+#     "isActive": true
+#   }
+# }
