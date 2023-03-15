@@ -13,7 +13,7 @@ Here are instructions on how to setup the API
 ## Installation
 
 1. Clone the repository.
-2. Install Node.js and npm if you haven't already.
+2. Install Node.js and yarn if you haven't already.
 3. Open a terminal and navigate to the directory containing the codes.
 4. Install the required dependencies by running `npm install`.
 
@@ -21,7 +21,7 @@ Here are instructions on how to setup the API
 
 To run the script, enter the following command in your terminal:
 
-`npm run start`
+`yarn start`
 
 ## Documentation
 
@@ -29,4 +29,4 @@ Install the "humao.rest-client" recommended vscode extension and run the endpoin
 
 ## Test
 
-`npm run test`
+`yarn test`
